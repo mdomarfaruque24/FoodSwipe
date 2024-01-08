@@ -1,34 +1,23 @@
+:root{
+    --quicksand:font-family: 'Quicksand', sans-serif;
+
+}
+
+
+
 body {
     font-family: Quicksand;
     padding: 0px;
     margin: 0px;
 }
-
-#header {
-    padding: 0px 200px;
-    margin: 0px;
-    display: flex;
-    height: 100px;
-    align-items: center;
-    justify-content: space-between;
-   
+.company-name{
+    font-family: var(--quicksand);
+    font-size: 20px !important;
+    font-weight: 800;
+    display: block;
+    margin: auto;
+    padding-left: 10px;
 }
-
-.company-area {
-    display: flex;
-    align-items: center;
-}
-
-.company-area h3 {
-    margin-left: 15px;
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    align-items: center;
-}
-
 #swipe {
     color: #FFFFFF;
 }
@@ -38,17 +27,19 @@ body {
 }
 
 nav ul {
+    font-family: var(--quicksand);
     display: flex;
     align-items: center;
     list-style: none;
-    font-weight: 600;
-    font-size: 20px;
+    font-weight: 800;
+    font-size: 20px !important;
     
-
 }
 
 nav ul li {
-    padding-left: 20px;
+    width: auto;
+    margin-left: 20px;
+    padding: 50px 10px;
     cursor: pointer;
 }
 
@@ -65,7 +56,7 @@ nav ul li {
 }
 
 .btn-order-now {
-
+    width: 146px;
     padding: 10px 20px;
     font-size: 20PX;
     border-radius: 20px;

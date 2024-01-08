@@ -9,49 +9,73 @@
     <link href="http://fonts.cdnfonts.com/css/ki-comic" rel="stylesheet">
                 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/x-icon" href="images/Logo.svg">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="resources/images/Logo.svg">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <title>Food Swipe</title>
 </head>
 
 <body>
-    <div id="header">
-        <div class="company-area">
-            <img src="images/Logo.svg" alt="Food Swipe Logo">
-            <h3><span id="food">Food</span> <span id="swipe">Swipe</span></h3>
-
-        </div>
-        <nav>
-            <ul>
-                <li class="btn home">Home</li>
-                <li class="btn about">About Us</li>
-                <li class="btn restaurnats">Restaurnats</li>
-                <li class="btn pages">Pages</li>
-                <li class="btn contacts">Contacts</li>
-                <div class="user-area">
-                    <li class="btn btn-notification"><img src="images/notification.svg" alt="notification"></li>
-                    <li class="btn "><button class="btn-order-now">Order Now</button></li>
-                </div>
+    <nav class="navbar navbar-expand-lg bg-white ">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-baseline" href="#">
+            <img src="resources/images/Logo.svg" alt="Food Swipe Logo">
+            <h3 class="company-name"><span id="food">Food</span> <span id="swipe">Swipe</span></h3>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Restaurnats
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <a class="nav-link active" aria-current="page" href="#">Contacts</a>
+              <a class="nav-link active" aria-current="page" href="#">About Us</a>
             </ul>
-        </nav>
-    </div>
-
-    <div id="banner-section">
-        <div id="left-section">
-            <p id="heading-text">The Best <br><span id="restaurants_text">
-                                Restaurants</span><br>
-                                In Your Home
-            </p>
+            <div class="d-flex">
+                <li class="btn btn-notification"><img src="resources/images/notification.svg" alt="notification"></li>
+                <li class="btn "><button class="btn-order-now">Order Now</button></li>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <div id="container banner-section row">
+        <div class="left-section col">
+            <h3 id="heading-text">The Best <br><span id="restaurants_text">Restaurants</span><br>In Your Home</h3>
             <p id="sub-title">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, officia quaerat. Est, quae error.
                 Dolorum facilis sint nisi vitae quasi!
             </p>
             <div id="droapdown">
-                <!-- <label for="resturents">Resturents</label> -->
-                
                 <select name="resturents" id="resturents">
-                    <option value="demo"><img src="/Images/Restaurant-icon.svg" alt="">Restaurants</option>
+                    <option value="demo"><img src="resources/Images/Restaurant-icon.svg" alt="">Restaurants</option>
                     <option value="foodzone">Food Zone</option>
                     <option value="flavoFill">FlavoFill</option>
                     <option value="kfc">KFC</option>
@@ -59,37 +83,24 @@
                 <button class="btn-order-now">Order Now</button>
             </div>
         </div>
-        <div id="right-section">
-            <div id="resturent-review">
-                <div id="resturent-review-left">
-                    <img src="/Images/Restaurant-icon.png`" alt="">
-
+        <div class="right-section col">
+            <div class="resturent-review">
+                <div class="resturent-review-left">
+                    <img src="resources/Images/Restaurant-icon.png`" alt="">
                 </div>
-                <div id="resturent-review-right">
-                    
-                </div>
+            <div class="hero-image">
+                <img id="hero-img" src="resources/Images/Hero.png" alt="hero">
             </div>
-            <img id="hero-img" src="/Images/Hero.png" alt="hero">
 
-        </div>
-    </div>
-    <div id="card-area">
-        <div id="card-title">
-            <h3>Special For You</h3>
-            <h2>Populer Dish Item</h2>
-        </div>
-        <div class="card">
-            <img class="card-img" src="/Images/Crispy-Salad.png" alt="">
-            <div class="card-text">
-                <p class="food-name">Popular Salad</p>
-                <p class="delivery-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 20 Min</p>
-                <p class="price">$ 89.00</p>
-                <button id="card-order-btn">Order Now</button>
-                
             </div>
         </div>
+        
+
     </div>
 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
 </html>
