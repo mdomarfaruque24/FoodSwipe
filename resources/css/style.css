@@ -4,31 +4,27 @@
 }
 
 
-
 body {
     font-family: Quicksand;
     margin: 0px;
     padding: 0px;
 }
 
-.nav-item{
+#swipe {
+    color: #FF970B;
+}
+
+.nav-item {
     margin: 0px auto;
     font-size: 12px !important;
 }
 .company-name{
-    font-family: var(--quicksand);
-    font-size: 20px !important;
+    font-family: var(--quicksand)!important;
+    font-size: 24px !important;
     font-weight: 800;
     display: block;
     margin: auto;
     padding-left: 10px;
-}
-#swipe {
-    color: #FFFFFF;
-}
-
-#swipe {
-    color: #FF970B;
 }
 
 
@@ -73,10 +69,17 @@ nav ul li {
 
 }
 
+.resturents{
+    padding: 20px;
+    background-color: #FF6000;
+}
+
 .btn-order-now {
+    font-family: var(--quicksand) !important;
+    font-weight: 600;
     width: 146px;
     padding: 10px 20px;
-    font-size: 20PX;
+    font-size: 18PX;
     border-radius: 20px;
     border: none;
     background: linear-gradient(to right, #FFB80E, #FF6000);
@@ -130,6 +133,28 @@ nav ul li {
     margin-left: 20px;
     color: #FFFFFF;
 }
+.review-card{
+    border: 1px solid red;
+    padding: 10px 20px;
+}
+.text-lite{
+    font-family: var(--quicksand);
+    font-size: 16px;
+    color: #484848;
+    margin: 0px;
+}
+
+.text-bold{
+    font-family: var(--quicksand);
+    font-size: 20px;
+    color: #484848;
+    font-weight: 600;
+    margin: 0px;
+}
+
+
+
+
 
 #hero-img{
     padding: 5px;
